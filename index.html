@@ -22,10 +22,10 @@
       <div class="flex content-center justify-between">
         <div class="flex flex-col justify-center mb-4">
            <label for="message" class="text-lg font-semibold mb-2 text-gray-500">Job Description</label>
-           <textarea id="job-description" rows="6" class="w-80 h-52 p-2 border border-gray-300 shadow-md rounded mb-4 focus:ring-blue-500" placeholder="Past the text / Upload the file"></textarea>
+           <textarea id="job-description" rows="6" class="w-80 h-52 p-2 border border-gray-300 shadow-md rounded mb-2 focus:ring-blue-500" placeholder="Past the text / Upload the file"></textarea>
            <div class="flex content-center justify-center">
-             <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mr-2">Upload</button>
-             <button class="bg-gray-700 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">Clear</button>
+             <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold p-2 rounded mr-2">Upload</button>
+             <button class="bg-gray-700 hover:bg-yellow-600 text-white font-semibold p-2 rounded">Clear</button>
            </div>
         </div>
 <!--        input box for work experience-->
@@ -33,18 +33,16 @@
            <label for="message" class="text-lg font-semibold mb-2 text-gray-500">Work Experience</label>
            <textarea id="work-experience" rows="6" class="w-80 h-52 p-2 border border-gray-300 shadow-md rounded mb-4 focus:ring-blue-500" placeholder="Past the text / Upload the file"></textarea>
             <div class="flex content-center justify-center">
-             <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mr-2">Upload</button>
-             <button class="bg-gray-700 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">Clear</button>
+             <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold p-2 rounded mr-2">Upload</button>
+             <button class="bg-gray-700 hover:bg-yellow-600 text-white font-semibold p-2 rounded">Clear</button>
            </div>
         </div>
       </div>
 
 <!--      Response from Vertex AI-->
       <div class="mt-8">
-        <h2 class="text-xl font-semibold mb-4 text-yellow-500">Revised Bullet Points</h2>
-        <div class="bg-white p-4 h-36 border border-gray-300 rounded">
-        <!-- Show revised bullet points here -->
-        </div>
+        <button id='ai-generate' class="text-xl font-semibold mb-4 bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded">Generate Bullet Points</button>
+        <textarea id="ai-response" rows="5" class="bg-white p-4 h-36 w-full border border-gray-300 rounded"></textarea>
       </div>
   </main>
 
